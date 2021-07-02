@@ -86,8 +86,9 @@ public class Login1 {
         trainingIcon.click();
     }
     @When("user picks Java for training")
-    public void user_picks_for_training() {
+    public void user_picks_for_training() throws InterruptedException {
         WebElement javaIcon=Driver.getDriver().findElement(By.xpath("//i[@class='icon-moon-java ']"));
+        Thread.sleep(2000);
         javaIcon.click();
     }
 
